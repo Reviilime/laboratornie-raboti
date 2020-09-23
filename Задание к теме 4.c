@@ -17,25 +17,53 @@ void findSandP()
 void findL()
 {
     system("cls");
-    printf("Находится в разработке\n");
+    printf("Нахождение длины окружности L = π·d\n");
+    float d = 0;
+    printf("Введите d: ");
+    scanf("%f", &d);
+    printf("L = π x %f = %f\n", d, 3.14 * d);
 }
 
 void findArithmeticMean()
 {
     system("cls");
-    printf("Находится в разработке\n");
+    printf("Нахождение среднего арифметического a и b\n");
+    float a, b = 0;
+    printf("Введите a: ");
+    scanf("%f", &a);
+    printf("Введите b: ");
+    scanf("%f", &b);
+    printf("(%f + %f) / 2 = %f\n", a, b, (a + b) / 2);
 }
 
 void find4Sq()
 {
     system("cls");
-    printf("Находится в разработке\n");
+    printf("Нахождение суммы, разности, произведения и частного квадратов a и b\n");
+    float a, b = 0;
+    printf("Введите a: ");
+    scanf("%f", &a);
+    printf("Введите b: ");
+    scanf("%f", &b);
+    printf("%f² + %f² = %f\n", a, b, a * a + b * b); //Сумма
+    printf("%f² - %f² = %f\n", a, b, a * a - b * b); //Разность
+    printf("%f² x %f² = %f\n", a, b, a * a * (b * b)); //Произведение
+    printf("%f² / %f² = %f\n", a, b, a * a / (b * b)); //Частное
 }
 
 void find4Abs()
 {
     system("cls");
-    printf("Находится в разработке\n");
+    printf("Нахождение суммы, разности, произведения и частного модулей a и b\n");
+    int a, b = 0;
+    printf("Введите a: ");
+    scanf("%i", &a);
+    printf("Введите b: ");
+    scanf("%i", &b);
+    printf("|%i| + |%i| = %i\n", a, b, abs(a) + abs(b)); //Сумма
+    printf("|%i| - |%i| = %i\n", a, b, abs(a) - abs(b)); //Разность
+    printf("|%i| x |%i| = %i\n", a, b, abs(a) * abs(b)); //Произведение
+    printf("|%i| / |%i| = %i\n", a, b, abs(a) / abs(b)); //Частное
 }
 
 int main()
